@@ -1,0 +1,75 @@
+/* CSS => Cascading StyleSheet (Folha de estilo em cascata)*/
+/* elemento = tag html */
+
+/*
+    ATONOMIA DO CSS (regaras de estilo) 
+    seletor(Quem quero estilizar? & Qual elemento) {=> começa e termina
+        propriedade(O que quero alterar - caracteristica): Valor da propriedade 
+        exemplo => cor: vermelho
+    }    
+*/
+
+/* TIPOS DE SELETORES */
+
+/*Seletor por nome do elemento*/
+
+    header{
+        background-color: aquamarine; /*cor de fundo*/
+    }
+
+/*seletor por classe*/
+.conteudoPrincipal{ /* varias coisas pode ter esse nome*/
+    background-color: rgb(251, 252, 249);
+}
+.Titulo{
+    background-color: blueviolet;
+}
+
+/* seletor por id*/
+#paragrafo{ /*indentificador unico só uma coisa*/
+    background-color: indianred; /* cor de fundo*/
+    color: aqua; /*cor do texto*/
+
+    /* FONTES */
+    font-family: Arial, Helvetica, sans-serif; /*definir familia de fonte para o texto */
+    font-size: 70px;/*tamanho da fonte*/
+    width: 400px;/* definir a largura do paragrafo (caixa)*/
+    height: 300px;/* definir a altura do paragrafo (caixa)*/
+}
+
+/* POSICIONAMENTO*/
+
+/* Elemantos inlines => ocupam só o espaço necessario */
+/*São tags, a, span*/
+a{ /* não da para setar esses elementos */
+    background-color: aqua;
+    display: block; /* mudar para bloco*/
+    height: 60px;
+    /* inline-block - consegue setar altura */
+}
+
+/* Elementos em bloco */
+/* pode aplicar: altura, largura & deixar um do lado do outro*/
+
+/* FLEXBOX */
+.exemploFlexboxDiv{
+    height: 300px;/* altura*/
+    background-color: blue;/*cor de fundo */
+    display: flex; /*deixar as filhas flexiveis (quebra em linha)*/
+    /*flex-direction: column; => mudar a direção dos meus elementos*/
+    justify-content: center; /*mudar a centralização dos elementos & deixar espaço "space-between" */
+    align-items: center ; /* alinhar / centralizar */
+}
+.exemploFlexboxDiv div { /* setar altura nas divs filhas */
+    width: 100px; /* largura generica*/
+    height: 100px; /* altura generica */
+}
+.div1{
+    background-color: darkslateblue;
+}
+.div2{
+    background-color: rgb(61, 134, 139);
+}
+.div3{
+    background-color: rgb(95, 75, 221);
+}
