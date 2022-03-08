@@ -1,0 +1,116 @@
+/* CORPO */
+body{
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 120px; /* conteudo ficar um pouco mais para baixo*/
+  background-color: #1c1c1c;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CABEÇALHO */
+header {
+  background-color: #e6e6e6 ;
+  width: 100%;
+  display: flex;
+  padding: 25px;/*preenchimento de espaço*/
+  position: fixed;/*fixar no topo*/
+  top: 0;
+}
+
+/*LOGO*/
+header figure {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+header figure img {}
+
+header figure figcaption {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*MENU*/
+header nav {
+  width: 300px;/*definir uma largura*/
+}
+
+header nav ul {
+  display: flex; /*filhos flexiveis*/
+  align-items: center; /* inens no centro*/
+  justify-content: space-between;/*espasamento entre eles */
+  height: 100%; /*altura*/
+}
+
+header nav ul li {}
+
+header nav ul li a {
+  color: black;
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+section p {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+/* LISTA DE CATEGORIAS */
+section ul.Secaocategorias {
+  display: flex; /*quebrar um dolado do outro*/
+  justify-content: space-between; 
+  align-items: center; /* centralizar todos elementos */
+  width: 100%; /* pegar uma % da sua página */
+  margin: 50px 0 50px; /* para cima X, para o lado X, para baixo */
+
+}
+
+section ul.Secaocategorias li {}
+
+section ul.Secaocategorias li a {
+  color: #fff;
+  background-color: #2f2f2f;
+  display: block;
+  width: 130px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+section ul.ListaFilmes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /*quando nao estiver mais espaço quebra*/
+}
+
+section ul.ListaFilmes li {
+  max-width: 185px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+section ul.ListaFilmes li figure img {
+  width: 100%;
+}
+
+section ul.ListaFilmes li h2 {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden; /* esconder quando passar do bloco*/
+  white-space: nowrap; /* para não quebrar*/
+  text-overflow: ellipsis; /* tem continuidade (os tres pontos)*/
+}
